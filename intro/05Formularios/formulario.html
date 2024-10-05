@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromulario HTML</title>
+</head>
+<body>
+
+    <H1>formularios Html</H1>
+    <hr>
+    <!--readonly-->
+    <!--disable-->
+    <img src="../05Formularios/maduro.gif">
+    <img src="../05Formularios/200w (1).gif">
+    <img src="../05Formularios/giphy.gif">
+
+
+
+    <form action="" method="GET">
+        <fieldset>
+            <legend> Datos personales</legend>
+
+
+
+
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" value=""  minlength="3" maxlength="10" size="10" autofocus>
+        <br>
+
+        <label for="Usuario">Usuario</label>
+        <input type="text" name="Usuario" id="Usuario" autofocus pattern="[A-Za-z]{3,10}" title="Debe contener de 3 a 10 caracteres">
+        <br><br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass">
+        <br><br><br>
+        <label for="submit" value="enviar">Correo electronico:</label>
+        <input type="email" name="email" id="email">
+        <br><br><br>
+        <label for="edad" value="enviar">Edad:</label>
+        <input type="number" name="edad" id="edad" min="18"
+        max="50">
+    </fieldset>
+
+
+
+
+        <br><br><br>
+        <label for="tel">Telefono</label>
+        <input type="tel" name="tel" id="tel">
+        <br><br><br>
+        <label for="url">URL:</label>
+        <input type="url" name="url" id="url"
+        placeholder="dirección web">
+        <br><br><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha"
+        value="2006-10-04">
+        <br><br><br>
+        <label for="hora">Hora:</label>
+        <input type="time" name="hora" id="hora"
+        value="20:30:00">
+        <br><br><br>
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" id="sexo"
+        value="mujer"> mujer
+        <input type="radio" name="sexo"
+        id="sexo" value="hombre"> hombre
+        <input type="radio" name="sexo"
+        id="sexo" value="otro"> otro
+        <br><br><br>
+        <label for="hobbies">Pasatiempos</label>
+        <input type="checkbox" name="hobbies"
+        id="hobbies" value="deportes">deportes
+        <input type="checkbox" name="hobbies"
+        id="hobbies" values="Pinpong"> Pinpong
+        <br><br><br>
+        <label for="color">color</label>
+        <input type="color" name="color"
+        id="color">
+        <br><br>
+        <label type="file">subir archivo:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <input type="button" value="Clicqueame"
+        onclick="alert('feliz cumpleaños')"
+        onmouseover="alert('suavemente')">
+
+
+
+        <br><br>
+
+        <input type="image" src="../05Formularios/Boca_escudo.png" alt="Enviar" width="50px" onclick="alert('mundo web')">
+        <br><br><br>
+
+
+        <label for="browser">Navegador de preferencia</label>
+        <input type="text" name="browser" id="browser"
+        list="browsers">
+        <datalist id="browsers">
+
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+        </datalist>
+
+        <br><br>
+        <label for="mes">Mes de Ingreso</label>
+        <input type="month" name="mes" id="mes">
+        <br><br><br>
+        <label for="inten">intensidad</label>
+        <input type="range" name="inten"
+        id="inten" min="0" max="50" step="2">
+        <br><br><br>
+
+
+
+
+
+
+
+
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpiar todo">
+        <br><br>
+        <label for="comentarios">comentarios</label>
+        <br>
+        <textarea name="comentarios" id="comentarios"  rows="10" cols="40" placeholder="hazme saber tus comentarios"></textarea>
+
+        <br><br><br>
+
+        <label for="ciudadnac">Ciudad de nacimiento:</label>
+        <select name="ciiudadnac" id="ciudadnac" multiple>
+            <option value="Bogota" selected>Bogota</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Perira">Pereira</option>
+            <option value="Cali">Cali</option>
+
+
+
+        </select>
+        <input type="hidden" name="categoria"
+        value="backend" id="categoria">
+
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
